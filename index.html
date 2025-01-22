@@ -1,0 +1,911 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Tutoring Responsive Website</title>
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="Image/Logo.favicon.webp" type="image/png" />
+    <!-- CdnJS  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+  </head>
+  <body>
+    <div class="website-container">
+      <!-- Home Section -->
+      <section class="home" id="home">
+        <nav class="main-navbar">
+          <a href="#" class="logo">
+            <img
+              src="Image/Logo.png"
+              alt="Website Logo"
+              width="120"
+              height="auto"
+            />
+          </a>
+          <ul class="nav-list">
+            <li><a href="#home"><i class="bi bi-house-heart"></i>Home</a></li>
+            <li><a href="#services"><i class="bi bi-gear-wide-connected"></i>Services</a></li>
+            <li><a href="#courses"><i class="bi bi-grid-3x3-gap-fill"></i>Courses</a></li>
+            <li><a href="#categories"><i class="bi bi-journal-album"></i>Categories</a></li>
+            <li><a href="#comments"><i class="bi bi-chat-square-text"></i>Comments</a></li>
+          </ul>
+
+          <a href="login.html" class="get-started-btn-container">
+            <button class="get-started-btn btn"><i class="bi bi-play"></i>&nbsp;Get Started</button>
+          </a>
+          <!-- Hamburger Menu -->
+          <div class="menu-btn" aria-label="Toggle Menu" aria-expanded="false">
+            <i class="fa-solid fa-bars"></i>
+            <!-- Default Hamburger Icon -->
+          </div>
+        </nav>
+
+        <div class="banner">
+          <div class="banner-desc">
+            <h2>Start Learning With Our Experts, Anywhere, Anytime.</h2>
+            <p>
+              Access a variety of online courses led by top industry experts.
+              Learn at your own pace and achieve your goals with ease.
+            </p>
+            <div class="search-bar-container">
+              <form action="#" method="GET">
+                <input
+                  type="text"
+                  name="q"
+                  id="search"
+                  placeholder="What do you want to learn?"
+                />
+                <button type="submit" class="search-btn">🔍</button>
+              </form>
+            </div>
+          </div>
+          <div class="banner-img">
+            <div class="banner-img-container">
+              <img src="Image/Intro.jpg"                alt="Online Learning Introduction"
+                width="600"
+                height="auto"
+                loading="lazy"
+              />
+              <div class="states">
+                <div class="total-courses">
+                  <div class="icon">
+                    <i class="fa-solid fa-book"></i>
+                  </div>
+                  <div class="desc">
+                    <span>284+</span>
+                    <span>Total Courses</span>
+                  </div>
+                </div>
+                <div class="course-ratings">
+                  <span>4.7 <i class="fa-solid fa-star"></i></span>
+                  <span>Rating (58K)</span>
+                </div>
+              </div>
+              <div class="pattern">
+                <img src="Image/Pattern.png" alt="Decorative Pattern" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div id="chatbot-container">
+        <button id="chatbot-toggle">Chat with Us</button>
+        <div id="chatbot-window" class="hidden">
+          <div id="chatbot-header">
+            <span>AI Chatbot</span>
+            <button id="close-chatbot">X</button>
+            <!-- Close Button -->
+          </div>
+          <div id="chatbot-messages"></div>
+          <form id="chatbot-form">
+            <input
+              type="text"
+              id="chatbot-input"
+              placeholder="Type a message..."
+            />
+            <button type="submit">Send</button>
+          </form>
+        </div>
+      </div>
+
+      <section class="partners">
+        <h3>Our Trusted partners around the World.</h3>
+        <div class="owl-carousel owl-theme partners-slider">
+          <div class="item brand-item">
+            <img src="Image/Brand Logos/Cambridge.png" alt="Cambridge" />
+          </div>
+          <div class="item brand-item">
+            <img src="Image/Brand Logos/Chicago.png" alt="Chicago" />
+          </div>
+          <div class="item brand-item">
+            <img src="Image/Brand Logos/Harvard.png" alt="Harvard" />
+          </div>
+          <div class="item brand-item">
+            <img src="Image/Brand Logos/MFU.png" alt="MFU" />
+          </div>
+          <div class="item brand-item">
+            <img src="Image/Brand Logos/MIT.png" alt="MIT" />
+          </div>
+          <div class="item brand-item">
+            <img src="Image/Brand Logos/Online-Edu.png" alt="Online-Edu" />
+          </div>
+          <div class="item brand-item">
+            <img src="Image/Brand Logos/PennState.png" alt="PennState" />
+          </div>
+          <div class="item brand-item">
+            <img src="Image/Brand Logos/Standford.jpg" alt="Standford" />
+          </div>
+          <div class="item brand-item">
+            <img src="Image/Brand Logos/Yale.png" alt="Yale" />
+          </div>
+          <div class="item brand-item">
+            <img src="Image/Brand Logos/Uni-state.png" alt="Uni-state" />
+          </div>
+        </div>
+      </section>
+
+      <section id="services" class="services">
+        <header class="section-header">
+          <h1>Why Choose Us</h1>
+          <p>Empowering learning and growth with cutting-edge AI technology.</p>
+        </header>
+        <div class="service-items">
+          <div class="service-item">
+            <i class="fa-solid fa-robot"></i>
+            <h3>AI-Powered Learning</h3>
+            <p>
+              Experience personalized learning with our advanced AI tools
+              designed to cater to your unique needs.
+            </p>
+          </div>
+          <div class="service-item">
+            <i class="fa-solid fa-chalkboard-user"></i>
+            <h3>Expert Guidance</h3>
+            <p>
+              Learn from experienced instructors who integrate AI-driven
+              insights into every session.
+            </p>
+          </div>
+          <div class="service-item">
+            <i class="fa-solid fa-laptop"></i>
+            <h3>Seamless Accessibility</h3>
+            <p>
+              Our AI-powered platform makes learning convenient, accessible
+              anytime, anywhere.
+            </p>
+          </div>
+          <div class="service-item">
+            <i class="fa-solid fa-brain"></i>
+            <h3>Innovative Solutions</h3>
+            <p>
+              Leverage the power of AI to unlock smarter, faster, and more
+              effective learning experiences.
+            </p>
+          </div>
+        </div>
+        <div class="cta-section">
+          <h2>Discover the Full Potential of Our Services</h2>
+          <p>Get started today and transform your learning experience!</p>
+          <br />
+          <a href="https://www.coursera.org/" target="_blank"
+            ><button class="cta-btn">Explore More</button></a
+          >
+        </div>
+      </section>
+      
+      <section id="courses" class="courses">
+        <header class="section-header">
+          <div class="header-text">
+            <h1>Choose Your Favourite Course</h1>
+            <p>
+              Explore a diverse selection of courses designed to boost your
+              skills and knowledge.
+            </p>
+          </div>
+          <div class="btn-container">
+            <div class="btn-container">
+              <button id="view-all-btn" class="courses-btn">View All</button>
+              <button
+                id="previous-btn"
+                class="courses-btn"
+                style="display: none"
+              >
+                Previous
+              </button>
+            </div>
+          </div>
+        </header>
+
+        <div class="course-items">
+          <!-- Visible Courses -->
+          <div class="course-card">
+            <img
+              src="Image/Courses/Graphic Design.jpg"
+              alt="Graphic Design Course"
+            />
+            <div class="category"><h3>Design</h3></div>
+            <h2 class="course-title">Graphic Design</h2>
+            <div class="course-desc">
+              <span><i class="fa-solid fa-users"></i> 200+ Students</span>
+              <span><i class="fa-solid fa-video"></i> 25 Videos</span>
+            </div>
+            <div class="course-ratings">
+              <span><i class="fa-solid fa-star"></i> 4.8</span>
+              <span><b>$</b>150.0</span>
+            </div>
+            <div class="button-container">
+                <button class="enroll-btn" onclick="enrollMessage()"><i class="bi bi-plus-circle"></i>&nbsp;Enroll</button>
+                <button class="learn-more-btn" onclick="learnMoreMessage()"><i class="bi bi-info-circle"></i>&nbspLearn More</button>
+                <button class="wishlist-btn" onclick="wishlistMessage()">
+                  <i class="fa-solid fa-heart"></i> Add to Wishlist
+                </button>
+              <button class="share-btn" onclick="shareMessage()"><i class="bi bi-share"></i>&nbsp;Share</button>
+            </div>
+          </div>
+
+          <div class="course-card">
+            <img src="Image/Courses/AI course.jpg" alt="AI Course" />
+            <div class="category"><h3>AI</h3></div>
+            <h2 class="course-title">Introduction to AI</h2>
+            <div class="course-desc">
+              <span><i class="fa-solid fa-users"></i> 500+ Students</span>
+              <span><i class="fa-solid fa-video"></i>35 Videos</span>
+            </div>
+            <div class="course-ratings">
+              <span><i class="fa-solid fa-star"></i> 4.9</span>
+              <span><b>$</b>200.0</span>
+            </div>
+            <div class="button-container">
+                <button class="enroll-btn" onclick="enrollMessage()"><i class="bi bi-plus-circle"></i>&nbsp;Enroll</button>
+                <button class="learn-more-btn" onclick="learnMoreMessage()"><i class="bi bi-info-circle"></i>&nbspLearn More</button>
+                <button class="wishlist-btn" onclick="wishlistMessage()">
+                  <i class="fa-solid fa-heart"></i> Add to Wishlist
+                </button>
+              <button class="share-btn" onclick="shareMessage()"><i class="bi bi-share"></i>&nbsp;Share</button>
+            </div>
+          </div>
+
+          <div class="course-card">
+            <img src="Image/Courses/Python.jpg" alt="Coding Course" />
+            <div class="category"><h3>Programming</h3></div>
+            <h2 class="course-title">Learn Python Basic</h2>
+            <div class="course-desc">
+              <span><i class="fa-solid fa-users"></i> 350+ Students</span>
+              <span><i class="fa-solid fa-video"></i> 40 Videos</span>
+            </div>
+            <div class="course-ratings">
+              <span><i class="fa-solid fa-star"></i> 4.7</span>
+              <span><b>$</b>120.0</span>
+            </div>
+            <div class="button-container">
+                <button class="enroll-btn" onclick="enrollMessage()"><i class="bi bi-plus-circle"></i>&nbsp;Enroll</button>
+                <button class="learn-more-btn" onclick="learnMoreMessage()"><i class="bi bi-info-circle"></i>&nbspLearn More</button>
+                <button class="wishlist-btn" onclick="wishlistMessage()">
+                  <i class="fa-solid fa-heart"></i> Add to Wishlist
+                </button>
+              <button class="share-btn" onclick="shareMessage()"><i class="bi bi-share"></i>&nbsp;Share</button>
+            </div>
+          </div>
+
+          <div class="course-card">
+            <img
+              src="Image/Courses/Digital Marketing.png"
+              alt="Marketing Course"
+            />
+            <div class="category"><h3>Marketing</h3></div>
+            <h2 class="course-title">Digital Marketing</h2>
+            <div class="course-desc">
+              <span><i class="fa-solid fa-users"></i> 300+ Students</span>
+              <span><i class="fa-solid fa-video"></i> 20 Videos</span>
+            </div>
+            <div class="course-ratings">
+              <span><i class="fa-solid fa-star"></i> 4.6</span>
+              <span><b>$</b>130.0</span>
+            </div>
+            <div class="button-container">
+                <button class="enroll-btn" onclick="enrollMessage()"><i class="bi bi-plus-circle"></i>&nbsp;Enroll</button>
+                <button class="learn-more-btn" onclick="learnMoreMessage()"><i class="bi bi-info-circle"></i>&nbspLearn More</button>
+                <button class="wishlist-btn" onclick="wishlistMessage()">
+                  <i class="fa-solid fa-heart"></i> Add to Wishlist
+                </button>
+              <button class="share-btn" onclick="shareMessage()"><i class="bi bi-share"></i>&nbsp;Share</button>
+            </div>
+          </div>
+
+          <div class="course-card hidden">
+            <img
+              src="Image/Courses/Data Sciences.png"
+              alt="Data Science Course"
+            />
+            <div class="category"><h3>Data Science</h3></div>
+            <h2 class="course-title">Data Science</h2>
+            <div class="course-desc">
+              <span><i class="fa-solid fa-users"></i> 400+ Students</span>
+              <span><i class="fa-solid fa-video"></i> 30 Videos</span>
+            </div>
+            <div class="course-ratings">
+              <span><i class="fa-solid fa-star"></i> 4.8</span>
+              <span><b>$</b>250.0</span>
+            </div>
+            <div class="button-container">
+                <button class="enroll-btn" onclick="enrollMessage()"><i class="bi bi-plus-circle"></i>&nbsp;Enroll</button>
+                <button class="learn-more-btn" onclick="learnMoreMessage()"><i class="bi bi-info-circle"></i>&nbspLearn More</button>
+                <button class="wishlist-btn" onclick="wishlistMessage()">
+                  <i class="fa-solid fa-heart"></i> Add to Wishlist
+                </button>
+              <button class="share-btn" onclick="shareMessage()"><i class="bi bi-share"></i>&nbsp;Share</button>
+            </div>
+          </div>
+
+          <div class="course-card hidden">
+            <img src="Image/Courses/Web.jpg" alt="Web Development Course" />
+            <div class="category"><h3>Web Development</h3></div>
+            <h2 class="course-title">Full-Stack Web</h2>
+            <div class="course-desc">
+              <span><i class="fa-solid fa-users"></i> 550+ Students</span>
+              <span><i class="fa-solid fa-video"></i> 50 Videos</span>
+            </div>
+            <div class="course-ratings">
+              <span><i class="fa-solid fa-star"></i> 4.9</span>
+              <span><b>$</b>300.0</span>
+            </div>
+            <div class="button-container">
+                <button class="enroll-btn" onclick="enrollMessage()"><i class="bi bi-plus-circle"></i>&nbsp;Enroll</button>
+                <button class="learn-more-btn" onclick="learnMoreMessage()"><i class="bi bi-info-circle"></i>&nbspLearn More</button>
+                <button class="wishlist-btn" onclick="wishlistMessage()">
+                  <i class="fa-solid fa-heart"></i> Add to Wishlist
+                </button>
+              <button class="share-btn" onclick="shareMessage()"><i class="bi bi-share"></i>&nbsp;Share</button>
+            </div>
+          </div>
+
+          <!-- Hidden Courses -->
+          <div class="course-card hidden">
+            <img src="Image/Courses/UI_UX.jpg" alt="UI/UX Course" />
+            <div class="category"><h3>Design</h3></div>
+            <h2 class="course-title">UI/UX Design</h2>
+            <div class="course-desc">
+              <span><i class="fa-solid fa-users"></i> 220+ Students</span>
+              <span><i class="fa-solid fa-video"></i> 18 Videos</span>
+            </div>
+            <div class="course-ratings">
+              <span><i class="fa-solid fa-star"></i> 4.7</span>
+              <span><b>$</b>180.0</span>
+            </div>
+            <div class="button-container">
+                <button class="enroll-btn" onclick="enrollMessage()"><i class="bi bi-plus-circle"></i>&nbsp;Enroll</button>
+                <button class="learn-more-btn" onclick="learnMoreMessage()"><i class="bi bi-info-circle"></i>&nbspLearn More</button>
+                <button class="wishlist-btn" onclick="wishlistMessage()">
+                  <i class="fa-solid fa-heart"></i> Add to Wishlist
+                </button>
+              <button class="share-btn" onclick="shareMessage()"><i class="bi bi-share"></i>&nbsp;Share</button>
+            </div>
+          </div>
+
+          <div class="course-card hidden">
+            <img
+              src="Image/Courses/Machine Learning.jpg"
+              alt="Machine Learning Course"
+            />
+            <div class="category"><h3>ML</h3></div>
+            <h2 class="course-title">Machine Learning</h2>
+            <div class="course-desc">
+              <span><i class="fa-solid fa-users"></i> 450+ Students</span>
+              <span><i class="fa-solid fa-video"></i> 40 Videos</span>
+            </div>
+            <div class="course-ratings">
+              <span><i class="fa-solid fa-star"></i> 4.8</span>
+              <span><b>$</b>220.0</span>
+            </div>
+            <div class="button-container">
+                <button class="enroll-btn" onclick="enrollMessage()"><i class="bi bi-plus-circle"></i>&nbsp;Enroll</button>
+                <button class="learn-more-btn" onclick="learnMoreMessage()"><i class="bi bi-info-circle"></i>&nbspLearn More</button>
+                <button class="wishlist-btn" onclick="wishlistMessage()">
+                  <i class="fa-solid fa-heart"></i> Add to Wishlist
+                </button>
+              <button class="share-btn" onclick="shareMessage()"><i class="bi bi-share"></i>&nbsp;Share</button>
+            </div>
+          </div>
+
+          <div class="course-card hidden">
+            <img src="Image/Courses/Photography.jpg" alt="Photography Course" />
+            <div class="category"><h3>Photography</h3></div>
+            <h2 class="course-title">Photography</h2>
+            <div class="course-desc">
+              <span><i class="fa-solid fa-users"></i> 150+ Students</span>
+              <span><i class="fa-solid fa-video"></i> 12 Videos</span>
+            </div>
+            <div class="course-ratings">
+              <span><i class="fa-solid fa-star"></i> 4.6</span>
+              <span><b>$</b>100.0</span>
+            </div>
+            <div class="button-container">
+                <button class="enroll-btn" onclick="enrollMessage()"><i class="bi bi-plus-circle"></i>&nbsp;Enroll</button>
+                <button class="learn-more-btn" onclick="learnMoreMessage()"><i class="bi bi-info-circle"></i>&nbspLearn More</button>
+                <button class="wishlist-btn" onclick="wishlistMessage()">
+                  <i class="fa-solid fa-heart"></i> Add to Wishlist
+                </button>
+              <button class="share-btn" onclick="shareMessage()"><i class="bi bi-share"></i>&nbsp;Share</button>
+            </div>
+          </div>
+
+          <div class="course-card hidden">
+            <img
+              src="Image/Courses/Cyber Security.jpg"
+              alt="Cybersecurity Course"
+            />
+            <div class="category"><h3>Cybersecurity</h3></div>
+            <h2 class="course-title">Cybersecurity</h2>
+            <div class="course-desc">
+              <span><i class="fa-solid fa-users"></i> 300+ Students</span>
+              <span><i class="fa-solid fa-video"></i> 22 Videos</span>
+            </div>
+            <div class="course-ratings">
+              <span><i class="fa-solid fa-star"></i> 4.7</span>
+              <span><b>$</b>210.0</span>
+            </div>
+            <div class="button-container">
+                <button class="enroll-btn" onclick="enrollMessage()"><i class="bi bi-plus-circle"></i>&nbsp;Enroll</button>
+                <button class="learn-more-btn" onclick="learnMoreMessage()"><i class="bi bi-info-circle"></i>&nbspLearn More</button>
+                <button class="wishlist-btn" onclick="wishlistMessage()">
+                  <i class="fa-solid fa-heart"></i> Add to Wishlist
+                </button>
+              <button class="share-btn" onclick="shareMessage()"><i class="bi bi-share"></i>&nbsp;Share</button>
+            </div>
+          </div>
+
+          <div class="course-card hidden">
+            <img src="Image/Courses/Cooking.jpg" alt="Cooking Course" />
+            <div class="category"><h3>Cooking</h3></div>
+            <h2 class="course-title">Cooking Basics</h2>
+            <div class="course-desc">
+              <span><i class="fa-solid fa-users"></i> 400+ Students</span>
+              <span><i class="fa-solid fa-video"></i> 30 Videos</span>
+            </div>
+            <div class="course-ratings">
+              <span><i class="fa-solid fa-star"></i> 4.9</span>
+              <span><b>$</b>300.0</span>
+            </div>
+            <div class="button-container">
+                <button class="enroll-btn" onclick="enrollMessage()"><i class="bi bi-plus-circle"></i>&nbsp;Enroll</button>
+                <button class="learn-more-btn" onclick="learnMoreMessage()"><i class="bi bi-info-circle"></i>&nbspLearn More</button>
+                <button class="wishlist-btn" onclick="wishlistMessage()">
+                  <i class="fa-solid fa-heart"></i> Add to Wishlist
+                </button>
+              <button class="share-btn" onclick="shareMessage()"><i class="bi bi-share"></i>&nbsp;Share</button>
+            </div>
+          </div>
+
+          <div class="course-card hidden">
+            <img src="Image/Courses/Guitar.png" alt="Guitar Course" />
+            <div class="category"><h3>Guitar</h3></div>
+            <h2 class="course-title">Guitar Basic</h2>
+            <div class="course-desc">
+              <span><i class="fa-solid fa-users"></i> 250+ Students</span>
+              <span><i class="fa-solid fa-video"></i> 15 Videos</span>
+            </div>
+            <div class="course-ratings">
+              <span><i class="fa-solid fa-star"></i> 4.8</span>
+              <span><b>$</b>180.0</span>
+            </div>
+            <div class="button-container">
+                <button class="enroll-btn" onclick="enrollMessage()"><i class="bi bi-plus-circle"></i>&nbsp;Enroll</button>
+                <button class="learn-more-btn" onclick="learnMoreMessage()"><i class="bi bi-info-circle"></i>&nbspLearn More</button>
+                <button class="wishlist-btn" onclick="wishlistMessage()">
+                  <i class="fa-solid fa-heart"></i> Add to Wishlist
+                </button>
+              <button class="share-btn" onclick="shareMessage()"><i class="bi bi-share"></i>&nbsp;Share</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Categories -->
+      <section class="categories" id="categories">
+        <header class="section-header">
+          <h1>Explore Our Categories</h1>
+          <p>Find the right category to enhance your learning experience.</p>
+        </header>
+
+        <div class="categories-contents">
+          <div class="category-item">
+            <div class="category-icon">
+              <i class="fa-solid fa-palette"></i>
+            </div>
+            <div class="category-desc">
+              <h3>Designing</h3>
+              <p>
+                Learn the art of creating visually stunning designs, from
+                graphic design to UI/UX.
+              </p>
+            </div>
+          </div>
+
+          <div class="category-item">
+            <div class="category-icon">
+              <i class="fa-solid fa-code"></i>
+            </div>
+            <div class="category-desc">
+              <h3>Coding</h3>
+              <p>
+                Master programming languages and software development to build
+                your future.
+              </p>
+            </div>
+          </div>
+
+          <div class="category-item">
+            <div class="category-icon">
+              <i class="fa-solid fa-bullhorn"></i>
+            </div>
+            <div class="category-desc">
+              <h3>Marketing</h3>
+              <p>
+                Understand the fundamentals of digital marketing, advertising,
+                and branding.
+              </p>
+            </div>
+          </div>
+
+          <div class="category-item">
+            <div class="category-icon">
+              <i class="fa-solid fa-camera"></i>
+            </div>
+            <div class="category-desc">
+              <h3>Photography</h3>
+              <p>
+                Explore the art of capturing stunning photos and editing like a
+                pro.
+              </p>
+            </div>
+          </div>
+
+          <!-- New Category: Cooking -->
+          <div class="category-item">
+            <div class="category-icon">
+              <i class="fa-solid fa-utensils"></i>
+            </div>
+            <div class="category-desc">
+              <h3>Cooking</h3>
+              <p>
+                Discover recipes and cooking techniques from basic to advanced
+                levels.
+              </p>
+            </div>
+          </div>
+
+          <!-- New Category: Guitaring -->
+          <div class="category-item">
+            <div class="category-icon">
+              <i class="fa-solid fa-guitar"></i>
+            </div>
+            <div class="category-desc">
+              <h3>Guitaring</h3>
+              <p>
+                Learn to play the guitar, from basic chords to advanced
+                techniques.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Teacher  -->
+      <section class="instructor">
+        <div class="instructor-container">
+          <h2>Become an instructor with Bright Future Platform</h2>
+          <p>
+            Join our platform to share your knowledge and help students achieve
+            their goals.
+          </p>
+          <button class="teacher-btn btn">
+            <i class="fa-solid fa-user-plus"></i> Your Details
+          </button>
+        </div>
+      </section>
+
+      <!-- Comments Section -->
+       <section class="comments" id="comments">
+      <section class="comments-wrapper">
+        <div class="comments-summary">
+          <header class="section-header" style="background-color: #c5ecd3">
+            <h1>Comments</h1>
+            <p>Read what others have to say or leave your own comment below!</p>
+          </header>
+          <h2>What Our Users Say</h2>
+          <div class="summary-stats">
+            <div class="stat-item">
+              <h3>4.8</h3>
+              <p>Average Rating</p>
+            </div>
+            <div class="stat-item">
+              <h3>120</h3>
+              <p>Total Comments</p>
+            </div>
+            <div class="stat-item">
+              <h3>90%</h3>
+              <p>5-Star Ratings</p>
+            </div>
+          </div>
+        </div>
+
+        <section class="comments" id="comments">
+          <!-- Existing Comments -->
+          <div class="comments-list">
+            <div class="comment-card">
+              <div class="comment-header">
+                <img src="Image/Comments/developer.jpg" alt="Person Image" />
+                <div class="comment-info">
+                  <h3>Jane Williams</h3>
+                  <p>Web Developer</p>
+                </div>
+              </div>
+              <div class="comment-content">
+                <p>
+                  "The coding courses helped me understand JavaScript better. I
+                  now feel more confident in building interactive websites and
+                  apps. Thank you!"
+                </p>
+              </div>
+              <div class="comment-footer">
+                <div class="rating">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+              </div>
+            </div>
+            <div class="comment-card">
+              <div class="comment-header">
+                <img src="Image/Comments/Cooking.jpg" alt="Person Image" />
+                <div class="comment-info">
+                  <h3>Daniela Russo</h3>
+                  <p>Home Chef</p>
+                </div>
+              </div>
+              <div class="comment-content">
+                <p>
+                  "The cooking classes on this platform were amazing! I learned
+                  techniques that have taken my dishes to the next level. Highly
+                  recommended for anyone passionate about food."
+                </p>
+              </div>
+              <div class="comment-footer">
+                <div class="rating">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+              </div>
+            </div>
+            <div class="comment-card">
+              <div class="comment-header">
+                <img src="Image/Comments/Musician.jpg" alt="Person Image" />
+                <div class="comment-info">
+                  <h3>Alex Brown</h3>
+                  <p>Musician</p>
+                </div>
+              </div>
+              <div class="comment-content">
+                <p>
+                  "As a beginner guitarist, I found the lessons here extremely
+                  helpful. The step-by-step guides and practice exercises made
+                  it easy to learn my favorite songs."
+                </p>
+              </div>
+              <div class="comment-footer">
+                <div class="rating">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+              </div>
+            </div>
+            <div class="comment-card">
+              <div class="comment-header">
+                <img src="Image/Comments/Security.jpg" alt="Person Image" />
+                <div class="comment-info">
+                  <h3>Michael Johnson</h3>
+                  <p>Security Analyst</p>
+                </div>
+              </div>
+              <div class="comment-content">
+                <p>
+                  "The cybersecurity tutorials were incredibly detailed and
+                  practical. I now understand how to protect systems against
+                  real-world threats. This platform is a game-changer for IT
+                  professionals!"
+                </p>
+              </div>
+              <div class="comment-footer">
+                <div class="rating">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+              </div>
+            </div>
+            <div class="comment-card">
+              <div class="comment-header">
+                <img src="Image/Comments/Photographer.jpg" alt="Person Image" />
+                <div class="comment-info">
+                  <h3>Emily Carter</h3>
+                  <p>Photographer</p>
+                </div>
+              </div>
+              <div class="comment-content">
+                <p>
+                  "The photography tutorials taught me how to use lighting and
+                  composition effectively. My photos have improved
+                  significantly, and I feel more creative than ever."
+                </p>
+              </div>
+              <div class="comment-footer">
+                <div class="rating">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+              </div>
+            </div>
+            <div class="comment-card">
+              <div class="comment-header">
+                <img src="Image/Comments/FItness.jpg" alt="Person Image" />
+                <div class="comment-info">
+                  <h3>Liam Hayes</h3>
+                  <p>Fitness Enthusiast</p>
+                </div>
+              </div>
+              <div class="comment-content">
+                <p>
+                  "The fitness courses on this platform completely changed my
+                  workout routine. The personalized advice and video tutorials
+                  made it easy to stay consistent, and I’ve seen great results
+                  in just a few months!"
+                </p>
+              </div>
+              <div class="comment-footer">
+                <div class="rating">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+              </div>
+            </div>
+            <!-- Add more comment cards here -->
+          </div>
+
+          <!-- Comment Submission Form -->
+          <div class="comment-form">
+            <h2>Leave a Comment</h2>
+            <form id="commentForm">
+              <textarea
+                placeholder="Write your comment here..."
+                required
+              ></textarea>
+              <input type="text" placeholder="Your Name" required />
+              <input
+                type="text"
+                placeholder="Your Title (e.g., Data Analyst)"
+                required
+              />
+              <label for="rating">Your Rating:</label>
+              <select id="rating" required>
+                <option value="5">⭐⭐⭐⭐⭐ - Excellent</option>
+                <option value="4">⭐⭐⭐⭐ - Good</option>
+                <option value="3">⭐⭐⭐ - Average</option>
+                <option value="2">⭐⭐ - Poor</option>
+                <option value="1">⭐ - Terrible</option>
+              </select>
+              <button type="submit" class="submit-btn">Submit Comment</button>
+            </form>
+          </div>
+        </section>
+    </section>
+
+    </div>
+    
+
+    <!-- Footer Section -->
+    <!-- Footer Section -->
+    <footer class="footer">
+      <div class="footer-container">
+        <!-- About Section -->
+        <div class="footer-about">
+          <img src="Image/Logo.png" alt="Your Logo" class="footer-logo" />
+          <h3>
+            <p>
+              We harness advanced AI technology to provide personalized learning
+              experiences, adaptive paths, and real-time assistance unlike
+              traditional platforms.
+            </p>
+          </h3>
+        </div>
+
+        <!-- Contact Section -->
+        <div class="footer-contact">
+          <h3>Contact</h3>
+          <ul>
+            <li>
+              <b>Address:</b
+              ><a
+                href="https://www.bing.com/maps?osid=afbbcb3d-692a-4213-8469-38c217629f34&cp=20.046717~99.873072&lvl=15.337537&pi=0&imgid=a737a873-41f4-4df0-9d6a-9e5597df1aad&v=2&sV=2&form=S00027"
+              >
+                Moo1 ThaSut Mueang Chiang Rai, Chiang Rai, Thailand</a
+              >
+            </li>
+            <li>
+              <b>Phone:</b> <a href="phoneto:+012 987 23456">+012 987 23456</a>
+            </li>
+            <li><b>Website:</b> <a href="#">lamduan.mfu.ac.th</a></li>
+            <li>
+              <b>Email:</b>
+              <a href="mailto:lamduan.ac.th.com">lamduan.ac.th.com</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Quick Links Section -->
+        <div class="footer-links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#courses">Courses</a></li>
+            <li><a href="#categories">Categories</a></li>
+            <li><a href="#comments">Comments</a></li>
+          </ul>
+        </div>
+
+        <!-- Newsletter Section -->
+        <div class="footer-newsletter">
+          <h3>Newsletter</h3>
+          <p>Subscribe to get the latest updates and offers:</p>
+          <form action="#">
+            <input type="email" placeholder="Your Email" required />
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </footer>
+
+    <!-- jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- cdnjs -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+  </body>
+</html>
