@@ -1,4 +1,4 @@
-# AI_Powered_Tutor
+
 # AI Tutoring Responsive Website
 
 This project is a responsive website template designed for AI-powered tutoring services. The website features modern design principles, accessibility options, and various user-friendly functionalities to provide an optimal user experience.
