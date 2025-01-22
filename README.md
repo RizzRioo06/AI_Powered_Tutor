@@ -67,6 +67,6 @@ This project is licensed under the [MIT License](LICENSE).
 ## Contact
 
 For questions or suggestions, please contact:
-- **Your Name**: [kyawhmuesan@gmail.com](mailto:your-kyawhmuesan@gmail.com)
+- **My Gmail**: [kyawhmuesan@gmail.com](mailto:your-kyawhmuesan@gmail.com)
 - **GitHub**: [My GitHub Profile](https://github.com/RizzRioo06)
 
